@@ -16,8 +16,10 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-    #"https://github.com/ltdrdata/ComfyUI-Manager"
-    #"https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/ltdrdata/ComfyUI-Manager"
+    "https://github.com/cubiq/ComfyUI_essentials"
+	"https://github.com/city96/ComfyUI-GGUF"
+	"https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
 )
 
 WORKFLOWS=(
@@ -25,7 +27,7 @@ WORKFLOWS=(
 )
 
 CHECKPOINT_MODELS=(
-    "https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16"
+	"https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-Q4_K.gguf"
 )
 
 UNET_MODELS=(
@@ -34,7 +36,16 @@ UNET_MODELS=(
 LORA_MODELS=(
 )
 
+CLIP_MODELS=(
+	"Https://huggingface.co/chatpig/encoder/resolve/main/umt5_xxl_fp16.safetensors"
+)
+
+CLIP_VISION_MODELS=(
+	"https://huggingface.co/SimonCaine/comfyui-models/resolve/main/clip_vision/clip_vision_h.safetensors"
+)
+
 VAE_MODELS=(
+	"https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors"
 )
 
 ESRGAN_MODELS=(
@@ -62,6 +73,12 @@ function provisioning_start() {
     provisioning_get_files \
         "${COMFYUI_DIR}/models/controlnet" \
         "${CONTROLNET_MODELS[@]}"
+    provisioning_get_files \
+        "${COMFYUI_DIR}/models/clip" \
+        "${CLIP_MODELS[@]}"
+    provisioning_get_files \
+        "${COMFYUI_DIR}/models/clip_vision" \
+        "${CLIP_VISION_MODELS[@]}"
     provisioning_get_files \
         "${COMFYUI_DIR}/models/vae" \
         "${VAE_MODELS[@]}"
