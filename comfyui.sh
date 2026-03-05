@@ -20,6 +20,8 @@ NODES=(
     "https://github.com/cubiq/ComfyUI_essentials"
 	"https://github.com/city96/ComfyUI-GGUF"
 	"https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
+	"https://github.com/BigStationW/ComfyUi-ImageGalleryLoader"
+	"https://github.com/MixLabPro/comfyui-mixlab-nodes"
 )
 
 WORKFLOWS=(
@@ -27,6 +29,9 @@ WORKFLOWS=(
 )
 
 CHECKPOINT_MODELS=(
+)
+
+DIFFUSION_MODELS=(
 	"https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-Q4_K.gguf"
 )
 
@@ -64,6 +69,9 @@ function provisioning_start() {
     provisioning_get_files \
         "${COMFYUI_DIR}/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
+    provisioning_get_files \
+        "${COMFYUI_DIR}/models/diffusion_models" \
+        "${DIFFUSION_MODELS[@]}"
     provisioning_get_files \
         "${COMFYUI_DIR}/models/unet" \
         "${UNET_MODELS[@]}"
