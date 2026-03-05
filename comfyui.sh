@@ -16,12 +16,16 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-    "https://github.com/ltdrdata/ComfyUI-Manager"
-    "https://github.com/cubiq/ComfyUI_essentials"
+	"https://github.com/BigStationW/ComfyUi-ImageGalleryLoader"
 	"https://github.com/city96/ComfyUI-GGUF"
 	"https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
-	"https://github.com/BigStationW/ComfyUi-ImageGalleryLoader"
+	"https://github.com/kijai/ComfyUI-KJNodes"
+	"https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
 	"https://github.com/MixLabPro/comfyui-mixlab-nodes"
+	"https://github.com/rgthree/rgthree-comfy"
+	"https://github.com/WASasquatch/was-node-suite-comfyui"
+    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/ltdrdata/ComfyUI-Manager"
 )
 
 WORKFLOWS=(
