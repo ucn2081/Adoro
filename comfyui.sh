@@ -46,7 +46,7 @@ LORA_MODELS=(
 )
 
 CLIP_MODELS=(
-	"Https://huggingface.co/chatpig/encoder/resolve/main/umt5_xxl_fp16.safetensors"
+	"https://huggingface.co/chatpig/encoder/resolve/main/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
 )
 
 CLIP_VISION_MODELS=(
