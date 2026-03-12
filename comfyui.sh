@@ -5,6 +5,8 @@ COMFYUI_DIR=${WORKSPACE}/ComfyUI
 
 # Packages are installed after nodes so we can fix them...
 
+pip install --no-cache-dir diffusers
+
 APT_PACKAGES=(
     #"package-1"
     #"package-2"
@@ -26,6 +28,10 @@ NODES=(
 	"https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/cubiq/ComfyUI_essentials"
     "https://github.com/ltdrdata/ComfyUI-Manager"
+	"https://github.com/kijai/ComfyUI-WanVideoWrapper"
+	"https://github.com/crystian/ComfyUI-Crystools"
+	"https://github.com/yolain/ComfyUI-Easy-Use"
+	"https://github.com/lokitsar/ComfyUI-Workflow-Gallery"
 )
 
 WORKFLOWS=(
@@ -46,7 +52,7 @@ LORA_MODELS=(
 )
 
 CLIP_MODELS=(
-	"https://huggingface.co/chatpig/encoder/resolve/main/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+	"https://huggingface.co/city96/umt5-xxl-encoder-gguf/resolve/main/umt5-xxl-encoder-Q8_0.gguf"
 )
 
 CLIP_VISION_MODELS=(
