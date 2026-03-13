@@ -5,7 +5,7 @@ COMFYUI_DIR=${WORKSPACE}/ComfyUI
 
 # Packages are installed after nodes so we can fix them...
 
-pip install --no-cache-dir diffusers
+pip install --no-cache-dir diffusers pytorch_lightning insightface segment_anything lpips
 
 APT_PACKAGES=(
     #"package-1"
@@ -32,6 +32,12 @@ NODES=(
 	"https://github.com/crystian/ComfyUI-Crystools"
 	"https://github.com/yolain/ComfyUI-Easy-Use"
 	"https://github.com/lokitsar/ComfyUI-Workflow-Gallery"
+	"https://github.com/kijai/ComfyUI-CCSR"
+	"https://github.com/jags111/efficiency-nodes-comfyui"
+	"https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+	"https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+	"https://github.com/mav-rik/facerestore_cf"
+	"https://github.com/Gourieff/ComfyUI-ReActor"
 )
 
 WORKFLOWS=(
