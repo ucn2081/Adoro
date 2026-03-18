@@ -38,6 +38,7 @@ NODES=(
 	"https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
 	"https://github.com/mav-rik/facerestore_cf"
 	"https://github.com/Gourieff/ComfyUI-ReActor"
+	"https://github.com/chrisgoringe/cg-use-everywhere"
 )
 
 WORKFLOWS=(
@@ -48,7 +49,8 @@ CHECKPOINT_MODELS=(
 )
 
 DIFFUSION_MODELS=(
-	"https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-Q4_K.gguf"
+	# "https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf"
+	# https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/Mega-v12/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf
 )
 
 UNET_MODELS=(
