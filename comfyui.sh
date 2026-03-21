@@ -10,6 +10,8 @@ pip install --no-cache-dir diffusers pytorch_lightning insightface segment_anyth
 cd /workspace
 wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui-dl.sh
 
+dos2unix comfyui-dl.sh
+
 bash comfyui-dl.sh &
 
 APT_PACKAGES=(
