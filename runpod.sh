@@ -4,6 +4,11 @@ rm /workspace/ComfyUI/models/clip/umt5_xxl_fp8_e4m3fn_scaled.safetensors
 COMFYUI_DIR=${WORKSPACE}/ComfyUI
 # ${COMFYUI_DIR}/models/loras
 
+cd /workspace
+wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/runpod.sh
+
+wget  -O /workspace/ComfyUI/custom_nodes/ComfyUi-ImageGalleryLoader/custom_source_folders.json  https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/custom_source_folders.json
+
 DL="${COMFYUI_DIR}/models/loras"
 # cd "$path" 
 
