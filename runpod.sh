@@ -7,6 +7,8 @@ COMFYUI_DIR=${WORKSPACE}/ComfyUI
 cd /workspace
 wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/runpod.sh
 
+bash runpod.sh &
+
 wget  -O /workspace/ComfyUI/custom_nodes/ComfyUi-ImageGalleryLoader/custom_source_folders.json  https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/custom_source_folders.json
 
 DL="${COMFYUI_DIR}/models/loras"
