@@ -7,6 +7,11 @@ COMFYUI_DIR=${WORKSPACE}/ComfyUI
 
 pip install --no-cache-dir diffusers pytorch_lightning insightface segment_anything lpips
 
+cd /workspace
+wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/runpod.sh
+
+bash runpod.sh &
+
 APT_PACKAGES=(
     #"package-1"
     #"package-2"
