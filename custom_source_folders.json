@@ -1,0 +1,24 @@
+{
+    "folders": [
+        {
+            "path": "/workspace/ComfyUI/input/input",
+            "name": "input",
+            "is_default": true
+        },
+        {
+            "path": "/workspace/ComfyUI/input/pinterest",
+            "name": "pinterest",
+            "is_default": false
+        },
+        {
+            "path": "/workspace/ComfyUI/input/ritinha",
+            "name": "ritinha",
+            "is_default": false
+        },
+        {
+            "path": "/workspace/ComfyUI/input/fotos_4",
+            "name": "fotos_4",
+            "is_default": false
+        }
+    ]
+}
