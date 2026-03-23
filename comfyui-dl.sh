@@ -10,16 +10,15 @@ DM="${COMFYUI_DIR}/models"
 
 wget  -O /workspace/ComfyUI/custom_nodes/ComfyUi-ImageGalleryLoader/custom_source_folders.json  https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/custom_source_folders.json
 
+wget -nc -O "${DM}/diffusion_models/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf" "https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf"
+#wget -nc -O "${DM}/diffusion_models/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf"  https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/Mega-v12/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf
+#wget -nc -O "${DM}/diffusion_models/Phantom_Wan_14B_FusionX-Q6_K.gguf"  https://huggingface.co/QuantStack/Phantom_Wan_14B_FusionX-GGUF/resolve/main/Phantom_Wan_14B_FusionX-Q6_K.gguf
 
 #wget -nc -O "${DM}/insightface/inswapper_128.onnx" "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/inswapper_128.onnx"
 #wget -nc -O "${DM}/reswapper/reswapper_128.onnx"   "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/reswapper_128.onnx"
 #wget -nc -O "${DM}/reswapper/reswapper_256.onnx"   "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/reswapper_256.onnx"
 
-wget -nc -O "${DM}/checkpoints/real-world_ccsr-fp16.safetensors" https://huggingface.co/Kijai/ccsr-safetensors/resolve/main/real-world_ccsr-fp16.safetensors
-
-wget -nc -O "${DM}diffusion_models/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf"  https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf
-#wget -nc -O "${DM}/diffusion_models/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf"  https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/Mega-v12/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf
-#wget -nc -O "${DM}/diffusion_models/Phantom_Wan_14B_FusionX-Q6_K.gguf"  https://huggingface.co/QuantStack/Phantom_Wan_14B_FusionX-GGUF/resolve/main/Phantom_Wan_14B_FusionX-Q6_K.gguf
+wget -nc -O "${DM}/checkpoints/real-world_ccsr-fp16.safetensors" "https://huggingface.co/Kijai/ccsr-safetensors/resolve/main/real-world_ccsr-fp16.safetensors"
 
 wget -nc -O "${DM}/loras/Bouncy SqueezyV1.safetensors"   "https://civitai.com/api/download/models/2345430?token=9ffbafa226d031653b7ea196c6334fe0"
 wget -nc -O "${DM}/loras/fingering_i2v_e248.safetensors" "https://civitai.com/api/download/models/1694292?token=9ffbafa226d031653b7ea196c6334fe0"
