@@ -9,8 +9,10 @@ pip install --no-cache-dir diffusers pytorch_lightning insightface segment_anyth
 
 cd /workspace
 wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui-dl.sh
+wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui-dl-2.sh
 
 dos2unix comfyui-dl.sh
+dos2unix comfyui-dl-2.sh
 
 bash comfyui-dl.sh &
 
@@ -48,6 +50,14 @@ NODES=(
 	"https://github.com/chrisgoringe/cg-use-everywhere"
 	"https://github.com/ltdrdata/ComfyUI-Impact-Pack"
 	"https://github.com/HECer/ComfyUI-FilePathCreator"
+	"https://github.com/wallen0322/ComfyUI-Wan22FMLF"
+	"https://github.com/badjeff/comfyui_lora_tag_loader"
+	"https://github.com/Nourepide/ComfyUI-Allor"
+	"https://github.com/kijai/ComfyUI-Florence2"
+	"https://github.com/EvilBT/ComfyUI_SLK_joy_caption_two"
+	"https://github.com/jamesWalker55/comfyui-various"
+	"https://github.com/kijai/ComfyUI-segment-anything-2"
+	"https://github.com/Fannovel16/comfyui_controlnet_aux"
 )
 
 WORKFLOWS=(
