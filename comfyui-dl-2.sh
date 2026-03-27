@@ -10,9 +10,10 @@ DM="${COMFYUI_DIR}/models"
 
 wget  -O /workspace/ComfyUI/custom_nodes/ComfyUi-ImageGalleryLoader/custom_source_folders.json  https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/custom_source_folders.json
 
-wget -nc -O "${DM}/diffusion_models/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf" "https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf"
+wget -nc -O "${DM}/diffusion_models/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf"     https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-nsfw-Q6_K.gguf
 wget -nc -O "${DM}/diffusion_models/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf"  https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/Mega-v12/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf
-wget -nc -O "${DM}/diffusion_models/Phantom_Wan_14B_FusionX-Q6_K.gguf"  https://huggingface.co/QuantStack/Phantom_Wan_14B_FusionX-GGUF/resolve/main/Phantom_Wan_14B_FusionX-Q6_K.gguf
+wget -nc -O "${DM}/diffusion_models/Phantom_Wan_14B_FusionX-Q6_K.gguf"           https://huggingface.co/QuantStack/Phantom_Wan_14B_FusionX-GGUF/resolve/main/Phantom_Wan_14B_FusionX-Q6_K.gguf
+wget -nc -O "${DM}/diffusion_models/Wan2.2-Animate-14B-Q4_K_M.gguf"              https://huggingface.co/QuantStack/Wan2.2-Animate-14B-GGUF/resolve/main/Wan2.2-Animate-14B-Q4_K_M.gguf
 
 wget -nc -O "${DM}/insightface/inswapper_128.onnx" "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/inswapper_128.onnx"
 wget -nc -O "${DM}/reswapper/reswapper_128.onnx"   "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/reswapper_128.onnx"
