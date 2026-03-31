@@ -16,8 +16,6 @@ dos2unix comfyui.sh
 dos2unix comfyui-dl.sh
 dos2unix comfyui-dl-2.sh
 
-bash comfyui-dl.sh &
-
 APT_PACKAGES=(
     #"package-1"
     #"package-2"
@@ -60,6 +58,10 @@ NODES=(
 	"https://github.com/jamesWalker55/comfyui-various"
 	"https://github.com/kijai/ComfyUI-segment-anything-2"
 	"https://github.com/Fannovel16/comfyui_controlnet_aux"
+	"https://github.com/chflame163/ComfyUI_LayerStyle"
+	"https://github.com/pollockjj/ComfyUI-MultiGPU"
+	"https://github.com/Smirnov75/ComfyUI-mxToolkit"
+	"https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative"
 )
 
 WORKFLOWS=(
