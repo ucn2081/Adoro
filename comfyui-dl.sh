@@ -13,8 +13,10 @@ wget -nc -O "${DM}/diffusion_models/Wan2.2-Animate-14B-Q4_K_M.gguf"             
 
 wget -nc -O "${DM}/checkpoints/real-world_ccsr-fp16.safetensors" "https://huggingface.co/Kijai/ccsr-safetensors/resolve/main/real-world_ccsr-fp16.safetensors"
 
+mkdir "${DM}/loras"
 mkdir "${DM}/insightface"
 mkdir "${DM}/reswapper"
+
 
 wget -nc -O "${DM}/insightface/inswapper_128.onnx"    "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/inswapper_128.onnx"
 wget -nc -O "${DM}/reswapper/reswapper_128.onnx"      "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/reswapper_128.onnx"
@@ -49,8 +51,11 @@ wget -nc -O "/custom_nodes/ComfyUi-ImageGalleryLoader/custom_source_folders.json
 
 sed -i "s/0.969/9999999.969/" /workspace/ComfyUI/custom_nodes/ComfyUI-ReActor/scripts/reactor_sfw.py
 
-wget -nc -O "/workspace/ComfyUI//diffusion_models/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf"  https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/Mega-v12/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf
+wget -nc -O "/workspace/ComfyUI/models/diffusion_models/wan2.2-rapid-mega-aio-nsfw-v12.1-Q6_K.gguf"  https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/Mega-v12/wan2.2-rapid-mega-aio-nsfw-v12.1-Q4_K.gguf
 
+
+wget -nc -O P009-The-Walk-Wan2.2-i2v_Normal-H.safetensors "https://civitai.com/api/download/models/2254373?token=9ffbafa226d031653b7ea196c6334fe0"
+wget -nc -O P009-The-Walk-Wan2.2-i2v_Normal-L.safetensors "https://civitai.com/api/download/models/2254403?token=9ffbafa226d031653b7ea196c6334fe0"
 
 # wget -nc -O "${DM}/checkpoints/illustrij_v21.safetensors"  "https://civitai.com/api/download/models/2728617?token=9ffbafa226d031653b7ea196c6334fe0"
 
