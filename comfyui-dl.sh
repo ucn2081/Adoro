@@ -11,6 +11,10 @@ wget -nc -O "/workspace/ComfyUI/models/diffusion_models/wan2.2-i2v-rapid-aio-v10
 wget -nc -O "/workspace/ComfyUI/models/diffusion_models/Phantom_Wan_14B_FusionX-Q4_K.gguf"           https://huggingface.co/QuantStack/Phantom_Wan_14B_FusionX-GGUF/resolve/main/Phantom_Wan_14B_FusionX-Q4_K.gguf
 wget -nc -O "/workspace/ComfyUI/models/diffusion_models/Wan2.2-Animate-14B-Q4_K_M.gguf"              https://huggingface.co/QuantStack/Wan2.2-Animate-14B-GGUF/resolve/main/Wan2.2-Animate-14B-Q4_K_M.gguf
 
+wget -nc -O "/workspace/ComfyUI/models/clip/umt5-xxl-encoder-Q8_0.gguf"        "https://huggingface.co/city96/umt5-xxl-encoder-gguf/resolve/main/umt5-xxl-encoder-Q8_0.gguf"
+wget -nc -O "/workspace/ComfyUI/models/clip_vision/clip_vision_h.safetensors"  "https://huggingface.co/SimonCaine/comfyui-models/resolve/main/clip_vision/clip_vision_h.safetensors"
+wget -nc -O "/workspace/ComfyUI/models/vae/wan_2.1_vae.safetensors"            "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors"
+
 wget -nc -O "/workspace/ComfyUI/models/checkpoints/real-world_ccsr-fp16.safetensors" "https://huggingface.co/Kijai/ccsr-safetensors/resolve/main/real-world_ccsr-fp16.safetensors"
 
 mkdir "/workspace/ComfyUI/models/loras"
