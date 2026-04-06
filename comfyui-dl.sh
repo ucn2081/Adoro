@@ -7,6 +7,15 @@ COMFYUI_DIR=${WORKSPACE}/ComfyUI
 DM="${COMFYUI_DIR}/models"
 # cd "$path" 
 
+mkdir "/workspace/ComfyUI/models/loras"
+mkdir "/workspace/ComfyUI/models/loras/Wan"
+mkdir "/workspace/ComfyUI/models/loras/Wan 2.2"
+mkdir "/workspace/ComfyUI/models/insightface"
+mkdir "/workspace/ComfyUI/models/reswapper"
+
+
+cd /workspace/ComfyUI/models/diffusion_models
+
 wget -nc -O "/workspace/ComfyUI/models/diffusion_models/wan2.2-i2v-rapid-aio-v10-nsfw-Q4_K.gguf"     https://huggingface.co/befox/WAN2.2-14B-Rapid-AllInOne-GGUF/resolve/main/v10/wan2.2-i2v-rapid-aio-v10-nsfw-Q4_K.gguf
 wget -nc -O "/workspace/ComfyUI/models/diffusion_models/Phantom_Wan_14B_FusionX-Q4_K.gguf"           https://huggingface.co/QuantStack/Phantom_Wan_14B_FusionX-GGUF/resolve/main/Phantom_Wan_14B_FusionX-Q4_K.gguf
 wget -nc -O "/workspace/ComfyUI/models/diffusion_models/Wan2.2-Animate-14B-Q4_K_M.gguf"              https://huggingface.co/QuantStack/Wan2.2-Animate-14B-GGUF/resolve/main/Wan2.2-Animate-14B-Q4_K_M.gguf
@@ -17,9 +26,6 @@ wget -nc -O "/workspace/ComfyUI/models/vae/wan_2.1_vae.safetensors"            "
 
 wget -nc -O "/workspace/ComfyUI/models/checkpoints/real-world_ccsr-fp16.safetensors" "https://huggingface.co/Kijai/ccsr-safetensors/resolve/main/real-world_ccsr-fp16.safetensors"
 
-mkdir "/workspace/ComfyUI/models/loras"
-mkdir "/workspace/ComfyUI/models/insightface"
-mkdir "/workspace/ComfyUI/models/reswapper"
 
 
 wget -nc -O "/workspace/ComfyUI/models/insightface/inswapper_128.onnx"    "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/inswapper_128.onnx"
@@ -56,6 +62,10 @@ wget -nc -O "/workspace/ComfyUI/models/loras/Wan 2.2/SeductiveTurnsHigh-000048.s
 wget -nc -O "/workspace/ComfyUI/models/loras/Wan 2.2/SeductiveTurnsLow-000048.safetensors"  "https://civitai.com/api/download/models/2212510?token=9ffbafa226d031653b7ea196c6334fe0"
 
 
+wget -nc -O "/workspace/ComfyUI/models/loras/Wan 2.2/Wan_2_2_I2V_A14B_HIGH_lightx2v_4step_lora_v1030_rank_64_bf16.safetensors" "https://civitai.com/api/download/models/2361379?token=9ffbafa226d031653b7ea196c6334fe0"
+wget -nc -O "/workspace/ComfyUI/models/loras/Wan 2.2/Wan_2_2_I2V_A14B_HIGH_lightx2v_4step_lora_v1030_rank_64_bf16.safetensors" "https://civitai.com/api/download/models/2361379?token=9ffbafa226d031653b7ea196c6334fe0"
+
+
 wget -nc -O "${COMFYUI_DIR}/custom_nodes/ComfyUi-ImageGalleryLoader/custom_source_folders.json" "https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/custom_source_folders.json"
 
 
@@ -65,7 +75,13 @@ wget -nc -O "/workspace/ComfyUI/models/diffusion_models/wan2.2-rapid-mega-aio-ns
 wget -nc -O "/workspace/ComfyUI/models/loras/Wan 2.2/P009-The-Walk-Wan2.2-i2v_Normal-H.safetensors" "https://civitai.com/api/download/models/2254373?token=9ffbafa226d031653b7ea196c6334fe0"
 wget -nc -O "/workspace/ComfyUI/models/loras/Wan 2.2/P009-The-Walk-Wan2.2-i2v_Normal-L.safetensors" "https://civitai.com/api/download/models/2254403?token=9ffbafa226d031653b7ea196c6334fe0"
 
+cd /workspace/ComfyUI/models/diffusion_models
+wget -nc https://huggingface.co/bullerwins/Wan2.2-I2V-A14B-GGUF/resolve/main/wan2.2_i2v_high_noise_14B_Q4_K_M.gguf
+wget -nc https://huggingface.co/bullerwins/Wan2.2-I2V-A14B-GGUF/resolve/main/wan2.2_i2v_low_noise_14B_Q4_K_M.gguf
 
+cd /workspace/ComfyUI/models/loras
+wget -nc https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors
+wget -nc https://huggingface.co/lightx2v/Wan2.2-Distill-Loras/resolve/main/wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors
 
 sed -i "s/0.969/9999999.969/" /workspace/ComfyUI/custom_nodes/ComfyUI-ReActor/scripts/reactor_sfw.py
 
