@@ -5,8 +5,12 @@ COMFYUI_DIR=${WORKSPACE}/ComfyUI
 
 # Packages are installed after nodes so we can fix them...
 
-pip install --no-cache-dir diffusers pytorch_lightning insightface segment_anything lpips
+pip install --no-cache-dir diffusers pytorch_lightning insightface segment_anything lpips PyWavelets filetype ufile
+pip install https://github.com/nunchaku-ai/nunchaku/releases/download/v1.3.0dev20260306/nunchaku-1.3.0.dev20260306+cu12.8torch2.9-cp312-cp312-linux_x86_64.whl
 
+# Successfully installed nunchaku-1.3.0.dev20260306+cu12.8torch2.9
+
+ 
 cd /workspace
 wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui.sh
 wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui-dl.sh
@@ -25,41 +29,48 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-	"https://github.com/BigStationW/ComfyUi-ImageGalleryLoader"
-	"https://github.com/city96/ComfyUI-GGUF"
-	"https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
-	"https://github.com/kijai/ComfyUI-KJNodes"
-	"https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
-	"https://github.com/MixLabPro/comfyui-mixlab-nodes"
-	"https://github.com/rgthree/rgthree-comfy"
-	"https://github.com/WASasquatch/was-node-suite-comfyui"
-    "https://github.com/cubiq/ComfyUI_essentials"
-    "https://github.com/ltdrdata/ComfyUI-Manager"
-	"https://github.com/kijai/ComfyUI-WanVideoWrapper"
-	"https://github.com/crystian/ComfyUI-Crystools"
-	"https://github.com/yolain/ComfyUI-Easy-Use"
-	"https://github.com/lokitsar/ComfyUI-Workflow-Gallery"
-	"https://github.com/kijai/ComfyUI-CCSR"
-	"https://github.com/jags111/efficiency-nodes-comfyui"
-	"https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
-	"https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
-	"https://github.com/mav-rik/facerestore_cf"
-	"https://github.com/Gourieff/ComfyUI-ReActor"
-	"https://github.com/chrisgoringe/cg-use-everywhere"
-	"https://github.com/ltdrdata/ComfyUI-Impact-Pack"
-	"https://github.com/HECer/ComfyUI-FilePathCreator"
-	"https://github.com/wallen0322/ComfyUI-Wan22FMLF"
 	"https://github.com/badjeff/comfyui_lora_tag_loader"
-	"https://github.com/Nourepide/ComfyUI-Allor"
-	"https://github.com/kijai/ComfyUI-Florence2"
-	"https://github.com/EvilBT/ComfyUI_SLK_joy_caption_two"
-	"https://github.com/jamesWalker55/comfyui-various"
-	"https://github.com/kijai/ComfyUI-segment-anything-2"
-	"https://github.com/Fannovel16/comfyui_controlnet_aux"
+	"https://github.com/BigStationW/ComfyUi-ImageGalleryLoader"
+	"https://github.com/burnsbert/ComfyUI-EBU-PromptHelper"
 	"https://github.com/chflame163/ComfyUI_LayerStyle"
-	"https://github.com/pollockjj/ComfyUI-MultiGPU"
-	"https://github.com/Smirnov75/ComfyUI-mxToolkit"
+	"https://github.com/chrisgoringe/cg-use-everywhere"
+	"https://github.com/city96/ComfyUI-GGUF"
+	"https://github.com/ClownsharkBatwing/RES4LYF"
+	"https://github.com/cmeka/ComfyUI-WanMoEScheduler"
+	"https://github.com/crystian/ComfyUI-Crystools"
+	"https://github.com/cubiq/ComfyUI_essentials"
+	"https://github.com/EvilBT/ComfyUI_SLK_joy_caption_two"
+	"https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
+	"https://github.com/Fannovel16/comfyui_controlnet_aux"
 	"https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative"
+	"https://github.com/Gourieff/ComfyUI-ReActor"
+	"https://github.com/HECer/ComfyUI-FilePathCreator"
+	"https://github.com/jags111/efficiency-nodes-comfyui"
+	"https://github.com/jamesWalker55/comfyui-various"
+	"https://github.com/jeffy5/comfyui-faceless-node"
+	"https://github.com/kijai/ComfyUI-CCSR"
+	"https://github.com/kijai/ComfyUI-DepthAnythingV2"
+	"https://github.com/kijai/ComfyUI-Florence2"
+	"https://github.com/kijai/ComfyUI-KJNodes"
+	"https://github.com/kijai/ComfyUI-segment-anything-2"
+	"https://github.com/kijai/ComfyUI-WanVideoWrapper"
+	"https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+	"https://github.com/lokitsar/ComfyUI-Workflow-Gallery"
+	"https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+	"https://github.com/ltdrdata/ComfyUI-Manager"
+	"https://github.com/mav-rik/facerestore_cf"
+	"https://github.com/MixLabPro/comfyui-mixlab-nodes"
+	"https://github.com/Nourepide/ComfyUI-Allor"
+	"https://github.com/nunchaku-tech/ComfyUI-nunchaku"
+	"https://github.com/pollockjj/ComfyUI-MultiGPU"
+	"https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+	"https://github.com/rgthree/rgthree-comfy"
+	"https://github.com/SeanScripts/ComfyUI-Unload-Model"
+	"https://github.com/Smirnov75/ComfyUI-mxToolkit"
+	"https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+	"https://github.com/wallen0322/ComfyUI-Wan22FMLF"
+	"https://github.com/WASasquatch/was-node-suite-comfyui"
+	"https://github.com/yolain/ComfyUI-Easy-Use"
 )
 
 WORKFLOWS=(
