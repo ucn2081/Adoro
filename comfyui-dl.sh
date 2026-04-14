@@ -96,9 +96,16 @@ wget -nc -O qwen_2512_pussy_anus_v2.safetensors                          "https:
 wget -nc -O extract-outfit_v3.safetensors                                "https://civitai.com/api/download/models/2196307?token=9ffbafa226d031653b7ea196c6334fe0"
 wget -nc -O "Wan2.2 - T2V - Dildo - LOW 14B.safetensors"                 "https://civitai.com/api/download/models/2838168?token=9ffbafa226d031653b7ea196c6334fe0"
 wget -nc -O "Wan2.2 - T2V - Dildo - HIGH 14B.safetensors"                "https://civitai.com/api/download/models/2838161?token=9ffbafa226d031653b7ea196c6334fe0"
+wget -nc  https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors
+# https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-Lightning-8steps-V1.0-bf16.safetensors?download=true
+# https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Lightning-4steps-V1.0-bf16.safetensors?download=true
+# https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-fp8-e4m3fn-Lightning-4steps-V1.0-bf16.safetensors?download=true
 
+cd "/workspace/ComfyUI/models/clip"
+# https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
 
-
+cd "/workspace/ComfyUI/models/vae"
+wget -nc https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
 
 
 
@@ -118,21 +125,12 @@ wget -nc -O "${COMFYUI_DIR}/custom_nodes/ComfyUi-ImageGalleryLoader/custom_sourc
 # https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/blob/main/qwen-image-edit-2511-Q4_K_M.gguf
 
 
-cd "/workspace/ComfyUI/models/clip"
-# https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
-
-cd "/workspace/ComfyUI/models/vae"
-wget -nc https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
 
 mkdir "/workspace/ComfyUI/models/depthanything"
 cd    "/workspace/ComfyUI/models/depthanything"
 wget -nc https://huggingface.co/Kijai/DepthAnythingV2-safetensors/resolve/main/depth_anything_v2_vitl_fp16.safetensors
 
 
-# https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors
-# https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-Lightning-8steps-V1.0-bf16.safetensors?download=true
-# https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Lightning-4steps-V1.0-bf16.safetensors?download=true
-# https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-fp8-e4m3fn-Lightning-4steps-V1.0-bf16.safetensors?download=true
 
 cd    "/workspace/ComfyUI/models/controlnet"
 #wget -nc -O Qwen-Image-InstantX-ControlNet-Union.safetensors  https://huggingface.co/InstantX/Qwen-Image-ControlNet-Union/resolve/main/diffusion_pytorch_model.safetensors
