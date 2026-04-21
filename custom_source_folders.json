@@ -19,6 +19,11 @@
             "path": "/workspace/ComfyUI/input/fotos_4",
             "name": "fotos_4",
             "is_default": false
+        },
+		        {
+            "path": "/workspace/ComfyUI/input/Tiktok_fotos",
+            "name": "Tiktok_fotos",
+            "is_default": false
         }
     ]
 }
