@@ -5,7 +5,7 @@ COMFYUI_DIR=${WORKSPACE}/ComfyUI
 
 # Packages are installed after nodes so we can fix them...
 
-pip install --no-cache-dir diffusers pytorch_lightning insightface segment_anything lpips PyWavelets filetype ufile
+pip install --no-cache-dir diffusers pytorch_lightning insightface segment_anything lpips PyWavelets filetype ufile blake3
 pip install https://github.com/nunchaku-ai/nunchaku/releases/download/v1.3.0dev20260306/nunchaku-1.3.0.dev20260306+cu12.8torch2.9-cp312-cp312-linux_x86_64.whl
 
 # Successfully installed nunchaku-1.3.0.dev20260306+cu12.8torch2.9
@@ -61,7 +61,6 @@ NODES=(
 	"https://github.com/mav-rik/facerestore_cf"
 	"https://github.com/MixLabPro/comfyui-mixlab-nodes"
 	"https://github.com/Nourepide/ComfyUI-Allor"
-	"https://github.com/nunchaku-tech/ComfyUI-nunchaku"
 	"https://github.com/pollockjj/ComfyUI-MultiGPU"
 	"https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
 	"https://github.com/rgthree/rgthree-comfy"
@@ -71,6 +70,7 @@ NODES=(
 	"https://github.com/wallen0322/ComfyUI-Wan22FMLF"
 	"https://github.com/WASasquatch/was-node-suite-comfyui"
 	"https://github.com/yolain/ComfyUI-Easy-Use"
+	"https://github.com/StartHua/Comfyui_segformer_b2_clothes"
 )
 
 WORKFLOWS=(
