@@ -13,10 +13,12 @@ pip install https://github.com/nunchaku-ai/nunchaku/releases/download/v1.3.0dev2
  
 cd /workspace
 wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui.sh
-wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui-dl.sh
+wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui-dl-1.sh
+wget https://raw.githubusercontent.com/ucn2081/Adoro/refs/heads/main/comfyui-dl-2.sh
 
 dos2unix comfyui.sh
-dos2unix comfyui-dl.sh
+dos2unix comfyui-dl-1.sh
+dos2unix comfyui-dl-2.sh
 
 APT_PACKAGES=(
     #"package-1"
